@@ -1,0 +1,417 @@
+/*
+Theme Name: 	jeangagniercom
+Theme URI: 		http://viewportindustries.com/products/starkers
+Description: 	The totally nude Wordpress theme!
+Version: 		4.0
+Author: 		Elliot Jay Stocks & Keir Whitaker
+Author URI: 	http://viewportindustries.com
+Tags: 			starkers, naked, clean, basic
+*/
+
+/*
+===========================
+CONTENTS:
+
+01 Sensible defaults
+02 Typography
+03 Media queries 
+===========================
+*/
+
+/* ---------------------------------------------------------------------------------------------------------- 
+01 Sensible defaults ----------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+@import "css/reset.css";
+
+div,
+article,
+section,
+header,
+footer,
+nav,
+li					{ position:relative; /* For absolutely positioning elements within containers (add more to the list if need be) */ }
+.group:after 		{ display:block; height:0; clear:both; content:"."; visibility:hidden; /* For clearing */ }
+body 				{ background:#fff; /* Don't forget to style your body to avoid user overrides */ }
+::-moz-selection 	{ background:#ff0; color:#333; }
+::selection 		{ background:#ff0; color:#333; }
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	background: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/*article, aside, details, figcaption, figure, footer,
+header, hgroup, nav, section, summary {
+  display: block;*/
+
+body {
+	line-height: 1;
+	color:#222222;
+    
+}
+
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font-weight: normal;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+}
+blockquote:before, blockquote:after {
+	content: '';
+	content: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a img {
+	border: none;
+}
+
+/* =Layout
+-------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------------------------------------------------- 
+02 Typography -----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+/*
+
+14 / 16	= 		0.875em 		(14px equivalent)
+16 / 16	= 		1em 			(16px equivalent)
+18 / 16 = 		1.125em 		(18px equivalent)
+21 / 16 = 		1.3125em 		(21px equivalent)
+24 / 16 = 		1.5em 			(24px equivalent)
+30 / 16 = 		1.875em 		(30px equivalent)
+
+*/
+
+body,
+input,
+textarea 			{ /* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */ }
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 					{ font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */ }
+
+/* ---------------------------------------------------------------------------------------------------------- 
+03 Media queries (using a mobile-first approach) ------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------- */
+
+/* 400 and up */
+@media screen and (min-width:400px) {
+
+					{ /* Place your styles here for all widths greater than 400px */ }
+
+}
+
+/* Retina Display */
+@media screen and (-webkit-min-device-pixel-ratio:2) {
+
+					{ /* Place your styles here for all 'Retina' screens */ }
+
+}
+
+body {
+	background-image:url(images/subtle_dots_blue.png);
+	background-color:#ffffff;
+	letter-spacing: -0.03em;
+
+}
+
+html, body, #container { height: 80%; }
+body > #container { height: auto; min-height: 100%; }
+
+a:link{
+color:#222222;
+}
+
+a:visited{
+color:#222222;
+}
+
+a:hover{
+color:#222222;
+text-decoration: underline;
+}
+
+a:active{
+	color:#222222;
+}
+
+header{
+	width:85%;
+	height:40px;
+/*	background-image:url(images/txture.png);
+	background-color:#efffff;*/
+	margin:auto;
+	margin-top:10px;
+	padding:10px;
+	/*border-bottom: 5px solid #222222;*/
+	line-height: 40px;
+}
+
+footer{
+ clear: both;
+ position: relative;
+ z-index: 10;
+/* height: 2em;
+ margin-top: -2em;*/
+/*	background-image:url(images/pinstriped_suit.png);
+	background-color:#ffffff;*/
+	
+}
+
+.insidefooter{
+padding:1em;	
+color:#222222;
+	text-align: right;
+	font-size:0.81em;
+	font-weight: 500;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+#sitetitle {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 900;
+	font-size:4.5em;
+	letter-spacing: -0.05em;
+	display:inline;
+
+}
+
+#sitetitle a {
+	color:#222222;
+	text-decoration: none;
+}
+
+.blogtitle{
+	font-weight: 700;
+	font-size:3em;
+	letter-spacing: -0.03em;
+}
+
+#container{
+	width:85%;
+	margin:auto;
+	margin-top:160px;
+}
+
+.biocopy{
+	padding: 10px;
+	display:block;
+	font-size:1em;
+	font-weight: 500;
+	color:#efffff;
+	margin:10px;
+	line-height: 1.5em;
+	letter-spacing: 0em;
+
+}
+
+.biocopy a,.insidefooter a{
+	text-decoration: underline;
+}
+
+.leftbar {
+float:left;	width:35%;
+	/*border:1px solid black;*/
+	background-image:url(images/pinstriped_suit.png);
+		background-color:#222222;
+
+}
+
+.metabar {
+	float:left;	width:25%;
+	/*border:1px solid black;*/
+/*	background-image:url(images/pinstriped_suit.png);
+		background-color:#222222;*/
+}
+
+.singlerightbar {
+	display:inline-block;
+	float:right;
+	width:70%;
+	/*background-color: #efffff;*/
+	/*border:1px solid black;*/
+
+}
+.rightbar {
+	display:inline-block;
+	float:right;
+	width:60%;
+	/*border:1px solid black;*/
+
+}
+
+.thickhr{
+	width: 100%;
+	border-top: 6px solid #222222;;
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+.thinhr{
+	width: 100%;
+	border-top: 1px solid #222222;;
+	margin-top: 15px;
+}
+
+.datecomments{
+	font-size:0.75em;
+	margin-top:3px;
+}
+
+.excerpt{
+	font-size:1em;
+	margin-top:10px;
+	text-shadow: none;
+	font-weight: 300;
+	line-height:1.6em;
+}
+
+.postcopy{
+	font-size:1em;
+	margin-top:10px;
+	text-shadow: none;
+	font-weight: 500;
+	line-height:1.6em;
+	letter-spacing:0;
+/*	text-indent: 50px;*/
+}
+
+.postcopy p{
+	margin-bottom:25px;
+}
+.readmore{
+	font-size:0.75em;
+	margin-top: 10px;
+	font-style: italic;	
+	font-weight:900;
+
+}
+
+.posttitle a {
+	/*color:#ff6000;*/
+	font-size:1.3125em;
+	font-weight:900;
+	
+}
+
+#socialmedia{
+float:right;
+display: inline;
+vertical-align: middle;
+padding:auto;
+}
+
+#languageswitch{
+
+}
+
+.leftbar a{
+	color:#efffff;
+}
+
+.portrait{
+	text-align: center;
+	display: block;
+	margin:auto;
+	width:100%;
+	margin-bottom:20px;
+}
+
+.mediaicon{
+	margin-top:auto;
+	margin-bottom:auto;
+	display: inline-block;
+	height:55px;
+	width:55px;
+	position: relative;
+	vertical-align:middle;
+
+
+}
+
+.mediaicon:hover{
+	 opacity: 0.55;
+}
+
+
+.datesinglepost{
+	margin-top: 15px;
+}
+
+.metaitem{
+	margin-bottom:25px;
+}
+
+li{
+
+}
+
+
+ul{
+	margin-bottom:2em;
+	font-weight: 300;
+	font-size: 1em;
+	line-height:1.6em;
+}
+
+
+#qtranslate-chooser{
+	display: inline;
+}
+
+.qtrans_flag{
+width:55px;
+height:55px;
+display:none;
+background:#ffffff;
+}
+
+.active{
+	display:none;
+}
+
+#sidebar a{
+	text-decoration: underline;
+}
+
+.olderarticles{
+	font-size:1.5em;
+	font-weight:900;
+	margin-bottom: 30px;
+	text-decoration: underline;
+}
